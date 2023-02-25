@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .sudoku {
+                display: flex;
+            }
+
+            .sudoku-board {
+                display: grid;
+                grid-template-columns: repeat(9, auto);
+                grid-gap: 0;
+                box-shadow: 0 0 5px #888;
+            }
+
+            .sudoku-board input {
+                box-sizing: content-box;
+                width: 1.1em;
+                outline: 0;
+                font-size: 0.8em;
+                transition: 0.2s;
+                margin: 0;
+                outline: 0;
+                padding: 5px;
+                text-align: center;
+                border: 0;
+                border-top: 1px solid #aaa;
+                border-left: 1px solid #aaa;
+                color: #777;
+            }
+
+            .sudoku-board input[data-col="3"], .sudoku-board input[data-col="6"] {
+                border-left: 2px solid #000;
+            }
+
+            .sudoku-board input[data-row="3"], .sudoku-board input[data-row="6"] {
+                border-top: 2px solid #000;
+            }
+        </style>
+      </head>
+    <body>
+        <div id="bestest"
+        <div class="sudoku">
+        <div class="sudoku-board">
+            <input class="js-field" maxlength="1" type="text" data-index="0" data-row="0" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="1" data-row="0" data-col="1">
+            <input class="js-field" maxlength="1" type="text" data-index="2" data-row="0" data-col="2">
+            <input class="js-field" maxlength="1" type="text" data-index="3" data-row="0" data-col="3">
+            <input class="js-field init" maxlength="1" type="text" data-index="4" data-row="0" data-col="4">
+            <input class="js-field init" maxlength="1" type="text" data-index="5" data-row="0" data-col="5">
+            <input class="js-field init" maxlength="1" type="text" data-index="6" data-row="0" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="7" data-row="0" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="8" data-row="0" data-col="8">
+            <input class="js-field" maxlength="1" type="text" data-index="9" data-row="1" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="10" data-row="1" data-col="1">
+            <input class="js-field" maxlength="1" type="text" data-index="11" data-row="1" data-col="2">
+            <input class="js-field init" maxlength="1" type="text" data-index="12" data-row="1" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="13" data-row="1" data-col="4">
+            <input class="js-field" maxlength="1" type="text" data-index="14" data-row="1" data-col="5">
+            <input class="js-field" maxlength="1" type="text" data-index="15" data-row="1" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="16" data-row="1" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="17" data-row="1" data-col="8">
+            <input class="js-field" maxlength="1" type="text" data-index="18" data-row="2" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="19" data-row="2" data-col="1">
+            <input class="js-field init" maxlength="1" type="text" data-index="20" data-row="2" data-col="2">
+            <input class="js-field" maxlength="1" type="text" data-index="21" data-row="2" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="22" data-row="2" data-col="4">
+            <input class="js-field init" maxlength="1" type="text" data-index="23" data-row="2" data-col="5">
+            <input class="js-field" maxlength="1" type="text" data-index="24" data-row="2" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="25" data-row="2" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="26" data-row="2" data-col="8">
+            <input class="js-field init" maxlength="1" type="text" data-index="27" data-row="3" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="28" data-row="3" data-col="1">
+            <input class="js-field" maxlength="1" type="text" data-index="29" data-row="3" data-col="2">
+            <input class="js-field init" maxlength="1" type="text" data-index="30" data-row="3" data-col="3">
+            <input class="js-field init" maxlength="1" type="text" data-index="31" data-row="3" data-col="4">
+            <input class="js-field" maxlength="1" type="text" data-index="32" data-row="3" data-col="5">
+            <input class="js-field init" maxlength="1" type="text" data-index="33" data-row="3" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="34" data-row="3" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="35" data-row="3" data-col="8">
+            <input class="js-field" maxlength="1" type="text" data-index="36" data-row="4" data-col="0">
+            <input class="js-field init" maxlength="1" type="text" data-index="37" data-row="4" data-col="1">
+            <input class="js-field init" maxlength="1" type="text" data-index="38" data-row="4" data-col="2">
+            <input class="js-field" maxlength="1" type="text" data-index="39" data-row="4" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="40" data-row="4" data-col="4">
+            <input class="js-field" maxlength="1" type="text" data-index="41" data-row="4" data-col="5">
+            <input class="js-field init" maxlength="1" type="text" data-index="42" data-row="4" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="43" data-row="4" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="44" data-row="4" data-col="8">
+            <input class="js-field" maxlength="1" type="text" data-index="45" data-row="5" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="46" data-row="5" data-col="1">
+            <input class="js-field" maxlength="1" type="text" data-index="47" data-row="5" data-col="2">
+            <input class="js-field init" maxlength="1" type="text" data-index="48" data-row="5" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="49" data-row="5" data-col="4">
+            <input class="js-field" maxlength="1" type="text" data-index="50" data-row="5" data-col="5">
+            <input class="js-field" maxlength="1" type="text" data-index="51" data-row="5" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="52" data-row="5" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="53" data-row="5" data-col="8">
+            <input class="js-field init" maxlength="1" type="text" data-index="54" data-row="6" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="55" data-row="6" data-col="1">
+            <input class="js-field init" maxlength="1" type="text" data-index="56" data-row="6" data-col="2">
+            <input class="js-field init" maxlength="1" type="text" data-index="57" data-row="6" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="58" data-row="6" data-col="4">
+            <input class="js-field" maxlength="1" type="text" data-index="59" data-row="6" data-col="5">
+            <input class="js-field" maxlength="1" type="text" data-index="60" data-row="6" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="61" data-row="6" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="62" data-row="6" data-col="8">
+            <input class="js-field" maxlength="1" type="text" data-index="63" data-row="7" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="64" data-row="7" data-col="1">
+            <input class="js-field" maxlength="1" type="text" data-index="65" data-row="7" data-col="2">
+            <input class="js-field" maxlength="1" type="text" data-index="66" data-row="7" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="67" data-row="7" data-col="4">
+            <input class="js-field init" maxlength="1" type="text" data-index="68" data-row="7" data-col="5">
+            <input class="js-field" maxlength="1" type="text" data-index="69" data-row="7" data-col="6">
+            <input class="js-field init" maxlength="1" type="text" data-index="70" data-row="7" data-col="7">
+            <input class="js-field" maxlength="1" type="text" data-index="71" data-row="7" data-col="8">
+            <input class="js-field init" maxlength="1" type="text" data-index="72" data-row="8" data-col="0">
+            <input class="js-field" maxlength="1" type="text" data-index="73" data-row="8" data-col="1">
+            <input class="js-field" maxlength="1" type="text" data-index="74" data-row="8" data-col="2">
+            <input class="js-field" maxlength="1" type="text" data-index="75" data-row="8" data-col="3">
+            <input class="js-field" maxlength="1" type="text" data-index="76" data-row="8" data-col="4">
+            <input class="js-field init" maxlength="1" type="text" data-index="77" data-row="8" data-col="5">
+            <input class="js-field init" maxlength="1" type="text" data-index="78" data-row="8" data-col="6">
+            <input class="js-field" maxlength="1" type="text" data-index="79" data-row="8" data-col="7">
+            <input class="js-field init" maxlength="1" type="text" data-index="80" data-row="8" data-col="8">
+          </div>
+          <div class="controls">
+    
+            <select class="js-examples-select">
+              <option selected="" disabled="" hidden="">Examples</option>
+                  <option value="0,0,0,0,0,0,0,0,6,0,3,0,0,7,1,0,4,0,0,0,0,0,0,0,8,0,0,0,0,0,9,0,8,0,7,1,1,0,3,0,0,0,0,0,0,0,0,2,0,3,0,9,0,0,5,0,7,0,0,6,0,0,0,2,0,0,0,0,0,7,0,0,0,0,1,8,0,0,0,0,2">Medium 1</option>
+                  <option value="0,0,0,0,1,7,2,0,0,0,0,0,4,0,0,0,0,0,0,0,9,0,0,3,0,0,0,4,0,0,7,8,0,5,0,0,0,2,5,0,0,0,8,0,0,0,0,0,6,0,0,0,0,0,6,0,1,5,0,0,0,0,0,0,0,0,0,0,6,0,3,0,2,0,0,0,0,1,7,0,4">Medium 2</option>
+                  <option value="9,0,0,5,0,1,7,0,0,2,0,1,0,0,9,0,0,0,0,0,0,8,7,0,0,9,0,0,8,0,0,6,4,0,7,0,0,0,0,0,0,0,2,1,0,0,0,0,0,9,0,0,0,0,7,0,6,2,4,0,0,0,0,0,4,0,0,0,0,0,0,6,1,0,0,0,0,0,0,4,0">Medium 3</option>
+                  <option value="0,0,0,0,3,0,5,7,0,0,0,2,0,0,8,0,0,0,6,0,0,0,0,0,0,0,0,0,3,0,5,7,0,0,4,0,0,0,0,4,0,0,0,0,2,0,0,5,6,0,0,7,1,8,0,7,8,0,0,0,0,0,0,0,0,6,7,0,9,0,0,1,0,0,0,0,0,0,0,2,0">Medium 4</option>
+                  <option value="8,0,0,0,0,0,0,0,0,0,0,3,6,0,0,0,0,0,0,7,0,0,9,0,2,0,0,0,5,0,0,0,7,0,0,0,0,0,0,0,4,5,7,0,0,0,0,0,1,0,0,0,3,0,0,0,1,0,0,0,0,6,8,0,0,8,5,0,0,0,1,0,0,9,0,0,0,0,4,0,0">Hard</option>
+                  <option value="0,0,3,9,0,0,0,0,0,4,0,0,0,8,0,0,3,6,0,0,8,0,0,0,1,0,0,0,4,0,0,6,0,0,7,3,8,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,4,0,7,0,0,6,8,6,0,0,0,0,0,0,0,0,7,0,0,0,0,0,5,0,0">Harder</option>
+                  <option value="0,0,0,8,0,1,0,0,0,0,0,0,0,0,0,0,4,3,5,0,0,0,0,0,0,0,0,0,0,0,0,7,0,8,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,3,0,0,0,0,6,0,0,0,0,0,0,7,5,0,0,3,4,0,0,0,0,0,0,0,0,2,0,0,6,0,0">Really Hard™ — not quite</option>
+                  <option value="0,0,0,7,4,0,0,0,0,0,0,0,0,0,5,0,0,0,0,1,0,0,0,0,0,0,5,3,0,0,2,0,0,0,0,0,0,2,8,0,0,0,0,5,4,0,0,5,0,6,0,8,9,0,4,3,0,9,0,7,0,0,0,0,0,0,0,0,0,0,0,6,8,0,0,0,0,2,0,3,0">tmp2</option>
+                  <option value="0,0,0,0,0,6,0,8,5,0,0,3,0,0,0,9,0,7,0,1,0,0,4,0,0,0,0,1,8,0,9,0,0,0,0,0,0,0,7,0,0,0,3,0,0,0,4,0,0,0,0,0,0,0,8,0,0,7,6,0,0,3,0,0,0,0,0,0,1,0,0,9,0,0,0,0,9,4,2,0,0">tmp3</option>
+                  <option value="0,0,0,0,0,0,5,2,8,4,7,0,0,1,0,0,0,0,0,0,3,8,0,0,0,0,0,0,0,1,7,8,0,0,0,3,0,0,0,0,0,0,0,9,0,0,0,0,0,4,0,0,0,1,0,0,0,9,5,8,7,0,0,5,0,0,0,0,3,0,0,0,0,2,0,0,0,0,6,0,0">tmp4</option>
+                  <option value="0,0,0,0,0,0,4,0,3,0,0,0,6,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,9,0,0,0,8,0,0,2,0,0,0,0,0,9,0,0,7,0,0,1,0,0,0,0,5,0,0,0,4,0,1,0,0,8,0,0,0,0,0,3,0,0,9,0,6,0,0,0,0,0,0">tmp5</option>
+                  <option value="0,0,0,0,7,0,8,0,0,6,0,0,0,0,0,0,0,3,0,0,0,0,0,0,5,0,0,5,0,0,3,0,0,1,0,0,9,0,0,6,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,4,7,0,0,0,0,9,0,0,8,0,0,1,0,0,0,0,0,0,0,5,0,0,0,0,0">tmp6</option>
+                  <option value="0,8,0,0,0,0,5,0,0,9,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,4,0,8,0,0,0,0,0,7,0,0,0,3,0,6,1,0,0,0,0,0,0,0,0,0,0,0,5,0,1,0,0,3,0,0,9,0,0,0,0,0,7,0,0,0,0,0,0,0,8">tmp7</option>
+                  <option value="0,5,0,0,0,0,9,3,0,4,0,0,8,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,5,0,0,7,0,9,0,0,0,0,0,0,0,4,7,0,6,4,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,7,0,0,0,0,0">tmp8</option>
+                  <option value="0,0,0,0,0,0,0,8,3,0,9,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,5,1,0,0,8,0,0,0,7,0,0,0,0,0,6,0,0,0,0,9,0,0,0,0,0,6,0,0,4,9,0,3,0,0,4,0,0,0,0,0,7,0,0,0,0,0,0,0,0">tmp9</option>
+                  <option value="0,0,0,0,4,0,6,9,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5,0,1,0,0,8,0,0,7,3,0,0,0,0,0,0,4,0,0,0,0,9,0,0,1,0,0,0,0,0,0,0,3,0,9,0,0,0,0,0,7,0,0,0,0,8,0,0,0,0,0">tmp10</option>
+            </select>
+            <button class="js-solve">Solve!</button>
+            <button class="js-play">Play</button>
+            <button class="js-pause">Pause</button>
+            <button class="js-continue">Continue</button>
+            <button class="js-reset">Reset</button>
+            <button class="js-clear">Clear</button>
+          <div class="stats js-console"></div>
+        </div>
+        </div>
+        
+        </div>
+            <script type="module">
+                import { Sudoku, examples } from './sudoku.js';
+                let sdk = new Sudoku(document.querySelector("#bestest"));
+            let board = examples[6].slice(1);
+            sdk.container.querySelector("select").value = board.join(",");
+            sdk.writeBoard(board, true);
+           </script>
+    </body>
+</html>
